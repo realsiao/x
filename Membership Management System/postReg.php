@@ -6,18 +6,7 @@ $pw = trim($_POST['pw']);
 $pw2 = trim($_POST['pw2']);
 $sex = $_POST['sex'];
 
-$servername = "localhost";
-$dusername = "member";
-$dpassword = "8P6mk3teakbAzYp3";
-$dbname = "member"; 
- 
-// 创建连接
-$conn = new mysqli($servername, $dusername, $dpassword, $dbname);
- 
-// 检测连接
-if ($conn->connect_error) {
-    die("连接失败: " . $conn->connect_error);
-} 
+
 
 $sql = "CREATE TABLE IF NOT EXISTS info (
     id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
