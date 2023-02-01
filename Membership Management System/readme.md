@@ -3,3 +3,5 @@
 
 ### Bugs
 The hobby option is not available.
+
+### Other
