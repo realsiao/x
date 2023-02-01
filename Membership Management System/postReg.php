@@ -6,7 +6,7 @@ $pw = trim($_POST['pw']);
 $pw2 = trim($_POST['pw2']);
 $sex = $_POST['sex'];
 
-
+include_once "conn.php";
 
 $sql = "CREATE TABLE IF NOT EXISTS info (
     id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 

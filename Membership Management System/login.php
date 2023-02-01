@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <doctype html>
 <html>
 <head>
@@ -30,15 +31,9 @@
 </head>
 <body>
     <div class="main">
-        <h1>会员管理系统</h1>
-        <h2>
-            <a href="index.php">首页</a>
-            <a href="signup.php">会员注册</a>
-            <a href="login.php" class="current">会员登录</a>
-            <a href="modify.php">个人资料修改</a>
-            <a href="admin.php">后台管理</a>
-        </h2>
-
+     <?php
+     include_once 'nav.php';
+     ?>
         <form action="postLogin.php" method="post">
             <table align="center" border="1" style="border-collapse: collapse" cellpadding="10" cellspacing="0">
             <tr>
